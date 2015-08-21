@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
+            buildForProfiling = "NO"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EABD46791857A0C700A5F081"
-               BuildableName = "libKIF.a"
-               BlueprintName = "KIF"
+               BlueprintIdentifier = "9CC9673A1AD4B1B600576D13"
+               BuildableName = "KIF.framework"
+               BlueprintName = "KIFFramework"
                ReferencedContainer = "container:KIF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,25 +26,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Coverage">
+      buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EABD46AD1857A0F300A5F081"
-               BuildableName = "KIF Tests - XCTest.xctest"
-               BlueprintName = "KIF Tests"
-               ReferencedContainer = "container:KIF.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EABD46791857A0C700A5F081"
-            BuildableName = "libKIF.a"
-            BlueprintName = "KIF"
+            BlueprintIdentifier = "9CC9673A1AD4B1B600576D13"
+            BuildableName = "KIF.framework"
+            BlueprintName = "KIFFramework"
             ReferencedContainer = "container:KIF.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EABD46791857A0C700A5F081"
-            BuildableName = "libKIF.a"
-            BlueprintName = "KIF"
+            BlueprintIdentifier = "9CC9673A1AD4B1B600576D13"
+            BuildableName = "KIF.framework"
+            BlueprintName = "KIFFramework"
             ReferencedContainer = "container:KIF.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,15 +69,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EABD46791857A0C700A5F081"
-            BuildableName = "libKIF.a"
-            BlueprintName = "KIF"
-            ReferencedContainer = "container:KIF.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

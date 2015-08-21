@@ -202,5 +202,23 @@
     return [UIAccessibilityElement accessibilityElement:nil view:nil withElementMatchingPredicate:predicate tappable:NO error:nil];
 }
 
+- (void)swipeViewWithAccessibilityIdentifier:(NSString *)identifier inDirection:(KIFSwipeDirection)direction
+{
+    UIView *viewToSwipe = nil;
+    UIAccessibilityElement *element = nil;
 
+    [self waitForAccessibilityElement: &element view:&viewToSwipe withIdentifier:identifier tappable:NO];
+
+    [self swipeAccessibilityElement:element inView:viewToSwipe inDirection:direction];
+}
+
+-(void) tapStepperWithAccessibilityIdentifier: (NSString *)accessibilityIdentifier increment: (KIFStepperDirection) stepperDirection
+{
+	@autoreleasepool {
+		UIView *view = nil;
+		UIAccessibilityElement *element = nil;
+		[self waitForAccessibilityElement:&element view:&view withIdentifier:accessibilityIdentifier tappable:YES];
+		[self tapStepperWithAccessibilityElement:element increment:stepperDirection inView:view];
+	}
+}
 @end
