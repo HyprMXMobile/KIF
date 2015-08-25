@@ -77,4 +77,19 @@
  */
 - (BOOL) tryFindingViewWithAccessibilityIdentifier:(NSString *) accessibilityIdentifier;
 
+/*!
+ @abstract Swipes a particular view in the view hierarchy in the given direction.
+ @discussion This step will get the view with the specified accessibility identifier and swipe the screen in the given direction from the view's center.
+ @param identifier The accessibility identifier of the view to swipe.
+ @param direction The direction in which to swipe.
+ */
+- (void)swipeViewWithAccessibilityIdentifier:(NSString *)identifier inDirection:(KIFSwipeDirection)direction;
+
+/*!
+ @abstract Taps a stepper to either increment or decrement the stepper. Presumed that - (minus) to decrement is on the left.
+ @discussion This will locate the left or right half of the stepper and perform a calculated click.
+ @param identifier The accessibility identifier of the view to interact with.
+ @param stepperDirection The direction in which to change the value of the stepper (KIFStepperDirectionIncrement | KIFStepperDirectionDecrement)
+ */
+-(void) tapStepperWithAccessibilityIdentifier: (NSString *)identifier increment: (KIFStepperDirection) stepperDirection;
 @end
